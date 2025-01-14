@@ -5,13 +5,34 @@
     <title>iTunes</title>
     <link href="styes.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js"></script>
 </head>
 <body>
+    <div><div>Amount of Songs: <select name="tablesize" id="tablesize" size="1"></div>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+        <option value="50">50</option>
+      </select>
 
-    <button onclick="run()">GO!</button>
+      <div>Arist: <select name="artist" id="artist" size="1"></div>
+        <option value="Kendrick+Lamar">Kendrick Lamar</option>
+        <option value="Billie+Eilish">Billie Eilish</option>
+        <option value="Bruno+Mars">Bruno Mars</option>
+        <option value="Sabrina+Carpenter">Sabrina Carpenter</option>
+        <option value="ROSÉ">ROSÉ</option>
+      </select><div>
+    <div></div>
+    <button id="run">GO!</button>
 
-    <table id="output" border="1"></table>
+    <table id="outputTable"></table>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
